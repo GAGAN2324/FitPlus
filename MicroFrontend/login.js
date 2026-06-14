@@ -1,4 +1,3 @@
-```javascript
 function login() {
 
     const email =
@@ -16,8 +15,8 @@ function login() {
         return;
     }
 
-    fetch(
-        "http://localhost:8080/api/auth/login",
+  fetch(
+      "https://whoopee-browbeat-unpack.ngrok-free.dev/api/auth/login",
         {
             method: "POST",
 
@@ -64,4 +63,3 @@ function login() {
             "Invalid Email or Password";
     });
 }
-```
