@@ -25,7 +25,7 @@ window.onload = function () {
 
 function loadDashboard() {
 
-   fetch("https://whoopee-browbeat-unpack.ngrok-free.dev/api/workouts")
+    fetch("http://localhost:8080/api/workouts")
 
         .then(response => response.json())
 
@@ -102,7 +102,7 @@ function loadDashboard() {
 
 function loadWeightChart() {
 
-    fetch("https://whoopee-browbeat-unpack.ngrok-free.dev/api/weights")
+    fetch("http://localhost:8080/api/weights")
 
         .then(response => response.json())
 
@@ -296,8 +296,8 @@ function saveWorkout() {
             document.getElementById("workoutDate").value
     };
 
-   fetch(
-       "https://whoopee-browbeat-unpack.ngrok-free.dev/api/workouts",
+    fetch(
+        "http://localhost:8080/api/workouts",
         {
             method: "POST",
 
@@ -343,7 +343,7 @@ function saveWeight() {
     };
 
     fetch(
-        "https://whoopee-browbeat-unpack.ngrok-free.dev/api/weights",
+        "http://localhost:8080/api/weights",
         {
             method: "POST",
 
